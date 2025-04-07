@@ -1,7 +1,7 @@
-/* Importa el archivo de variables CSS */
+/* Importa el archivo de variables CSS  usado para especificar todo lo que se desea implementar en la pagina*/
 @import url('variables.css');
 
-* {
+* { /* Universal */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
 }
 
 .backButton {
-    content: url(/storage/img/back.svg);
+    content: url(/storage/img/atras.svg);
     position: absolute;
     top: 20px;
     left: 20px;
@@ -67,8 +67,7 @@ body {
 
 .confirmationMessage {
     margin-top: -20px;
-    font-size: 24px;
-    background-size: 20px;
+    font-size: 46px;
     background-color: green;
     color: yellow;
     opacity: 0; /* Inicialmente invisible */
@@ -77,7 +76,7 @@ body {
 }
 
 #saveIcon {
-    content: url(/storage/img/like-2.svg);
+    content: url(/storage/img/savebutton.svg);
     position: absolute;
     top: -380px;
     right: 20px;
@@ -130,7 +129,7 @@ body {
 }
 
 .productRating::before {
-    content: url(/storage/img/star.svg);
+    content: url(/storage/img/calificacionicon.svg);
     margin-right: 5px;
     margin-top: 5px;
 }

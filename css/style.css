@@ -38,12 +38,12 @@ body {
 }
 
 .categoryItem:nth-child(3)::before {
-    content: url(/storage/img/t-shirt.svg);
+    content: url(/storage/img/camisas.svg);
     font-size: 3px;
 }
 
 .categoryItem:nth-child(1)::before {
-    content: url(/storage/img/all.svg);
+    content: url(/storage/img/general.svg);
     font-size: 3px;
 }
 
@@ -66,12 +66,12 @@ body {
 }
 
 .categoryItem:nth-child(2)::before {
-    content: url(/storage/img/dress.svg);
+    content: url(/storage/img/vestido.svg);
     font-size: 3px;
 }
 
 .categoryItem:nth-child(4)::before {
-    content: url(/storage/img/pants.svg);
+    content: url(/storage/img/pantalones.svg);
     font-size: 3px;
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .settingsButton::after {
-    content: url(/storage/img/Main-Icon.svg);
+    content: url(/storage/img/iconoAjustes.svg);
     font-size: 25px;
 }
 
@@ -271,12 +271,12 @@ body {
 }
 
 .mobileMenuItem:nth-child(3)::before {
-    content: url(/storage/img/Favourite.svg);
+    content: url(/storage/img/iconImgHome.svg);
     font-size: 30px;
 }
 
 .mobileMenuItem:nth-child(1)::before {
-    content: url(/storage/img/Home.svg);
+    content: url(/storage/img/Inicio.svg);
     font-size: 30px;
 }
 
@@ -298,12 +298,12 @@ body {
 }
 
 .mobileMenuItem:nth-child(2)::before {
-    content: url(/storage/img/Cart.svg);
+    content: url(/storage/img/Mochila.svg);
     font-size: 30px;
 }
 
 .mobileMenuItem:nth-child(4)::before {
-    content: url(/storage/img/Account.svg);
+    content: url(/storage/img/cuentainicio.svg);
     font-size: 30px;
 }
 
@@ -336,7 +336,7 @@ body {
 }
 
 .productCard::after {
-    content: url(/storage/img/star.svg) " 5.0";
+    content: url(/storage/img/calificacionicon.svg) " 5.0";
     position: absolute;
     bottom: 10px;
     right: 12px;

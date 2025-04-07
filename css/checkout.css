@@ -1,16 +1,18 @@
+@import url(variables.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--system-fonts);
 }
   
 body {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--main-white);
+    color: black;
     min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
     position: relative;
     overflow-x: hidden;
     }
@@ -47,7 +49,7 @@ body {
     width: 70%;
     max-width: 250px;
     height: 100%;
-      background-color: var(--white);
+    background-color: white;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     padding: 80px 15px 15px;
@@ -66,30 +68,31 @@ body {
     }
   
 .navigationMenu li a {
-    color: var(--primary-color);
+    color: var(--main-dark);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
     display: block;
-    border-radius: var(--small-radius);
+    border-radius: 12px;
     transition: background-color 0.3s;
     }
   
 .navigationMenu li a:hover {
-    background-color: var(--dark-gray);
+    background-color: darkgray;
     }
   
 .navButton {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-      background-color: var(--white);
-    border: none;
+    background-color: white;
+    border-color: lightgray;
+    border: 1;
+    content: url(/storage/img/menuCheckout.png);
     display: flex;
     align-items: center;
     justify-content: center;
-      cursor: pointer;
-      box-shadow: var(--shadow);
+    cursor: pointer;
     position: relative;
     z-index: 1002;
     }
@@ -98,11 +101,11 @@ body {
     position: absolute;
     width: 20px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--main-dark);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-      transition: all 0.3s ease;
+    transition: all 0.3s ease;
     opacity: 0;
     }
   
@@ -111,8 +114,7 @@ body {
     display: block;
     width: 18px;
     height: 0.2px;
-    background: var(--primary-color);
-    box-shadow: 0 -6px 0 var(--primary-color);
+    background: var(--main-dark);
     transition: all 0.3s ease;
 }
 
@@ -126,7 +128,7 @@ body {
     position: absolute;
     width: 20px;
     height: 1px;
-    background: var(--primary-color);
+    background: var(--main-dark);
     transform: rotate(-45deg);
 }
 
@@ -148,26 +150,27 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white);
-    border: none;
+    background-color: white;
+    border: 1;
+    border-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    box-shadow: var(--shadow);
     z-index: 1021;
 }
 
 .backButton::before {
-    content: url(/storage/img/back.svg);
+    border-radius: 20px;
+    border-color: black;
+    content: url(/storage/img/atras.svg);
     font-size: 18px;
-    color: var(--primary-color);
+    color: var(--main-dark);
 }
 
 .checkoutTitle {
-      font-size: 20px;
+    font-size: 20px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--main-dark);
     }
   
 .mainContent {
@@ -194,8 +197,8 @@ body {
 .productImage {
     width: 70px;
     height: 70px;
-    border-radius: var(--small-radius);
-    background-color: var(--light-gray);
+    border-radius: 12px;
+    background-color: lightgray;
     background-size: 6em;
     background-position: center;
     background-repeat: no-repeat;
@@ -203,16 +206,16 @@ body {
     }
 
 .productDetails h2 {
-      font-size: 16px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--main-dark);
     margin-bottom: 2px;
     }
   
 .productDetails h5 {
     font-size: 12px;
     font-weight: 400;
-    color: var(--medium-gray);
+    color: lightgray;
     margin-bottom: 5px;
     }
   
@@ -221,29 +224,31 @@ body {
     }
 
 .cartProduct:nth-child(1) .productImage {
-    background-image: url('../storage/img/Product1.png');
+    background-image: url('../storage/img/Product2Checkout.png');
   }
 
 .cartProduct:nth-child(2) .productImage {
-    background-image: url('../storage/img/Product2.png');
+    background-image: url('../storage/img/Product1Checkout.png');
 }
 
 .productPrice {
     font-size: 16px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--main-dark);
 }
 
 .quantityControls {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--main-dark);
 }
 
 .productSettings {
     width: 24px;
     height: 24px;
     background: none;
+    margin-top: -12px;
     border: none;
     cursor: pointer;
     position: absolute;
@@ -252,24 +257,23 @@ body {
 }
 
 .productSettings::before {
-    content: url(storage/img/menu1.svg);
+    content: url(/storage/img/menu1.svg);
     font-size: 20px;
-    color: var(--dark-gray);
+    color: darkgray;
 }
 
 .quantityControls button[class="-"],
 .quantityControls button[class="+"] {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    border: none;
-    background-color: var(--white);
+    border: 1;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     cursor: pointer;
-    box-shadow: var(--shadow);
 }
 
 .quantityControls button[class="-"]::before {
@@ -289,31 +293,32 @@ body {
 
 .paymentSection {
     margin-top: 10px;
+    color: var(--main-dark)
 }
 
 .paymentTitle {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: var(--main-dark);
 }
 
 .paymentMethod {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: var(--light-gray);
-    border-radius: var(--small-radius);
-    box-shadow: var(--shadow);
+    color: var(--main-dark);
+    background-color: lightgray;
+    border-radius: 12px;
     position: relative;
 }
 
 .visaIcon {
     width: 40px;
     height: 25px;
-    background-color: #1A1F71;
-    border-radius: 4px;
-    margin-right: 15px;
+    background-color: #1a1f77;
+    border-radius: 6px;
+    margin-right: 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -323,22 +328,21 @@ body {
 .visaIcon::after {
     content: "VISA";
     color: white;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .paymentMethod p {
     flex: 1;
+    color: var(--main-dark);
     font-size: 14px;
-    color: var(--dark-gray);
 }
 
 .arrowIcon::before {
-    content: "";
+    content: url(/storage/img/flechapago.png);
     display: inline-block;
-    width: 16px;
+    width: 20px;
+    margin-top: 2px;
     height: 16px;
-    background-image: url('/storage/img/arrow-down.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -356,36 +360,36 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .summaryLabel {
     font-size: 14px;
-    color: var(--dark-gray);
+    color: var(--main-dark);
 }
 
 .summaryValue {
     font-size: 14px;
-    color: var(--dark-gray);
+    color: black;
 }
 
 .summaryPrice {
     font-size: 14px;
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--main-dark);
     text-align: right;
 }
 
 .subtotalRow {
-    margin-top: 5px;
+    margin-top: -10px;
     padding-top: 15px;
-    border-top: 1px solid var(--light-gray);
 }
 
 .subtotalRow .summaryLabel,
 .subtotalRow .summaryPrice {
     font-size: 16px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--main-dark);
 }
 
 .checkoutFooter {
@@ -394,20 +398,19 @@ body {
     right: 0;
     width: 100%;
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--main-white);
 }
 
 .paymentButton {
     width: 100%;
     height: 55px;
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--main-dark);
+    color: white;
     border: none;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    box-shadow: var(--shadow);
 }
 
 /* Media Query para tablets y pantallas medianas */
@@ -424,9 +427,8 @@ body {
 
     .cartProduct {
         padding: 20px;
-        background-color: var(--white);
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
+        background-color: white;
+        border-radius: 12px;
     }
 
     .productImage {
@@ -447,21 +449,19 @@ body {
     }
 
     .paymentSection {
-        background-color: var(--white);
+        background-color: white;
         padding: 25px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
+        border-radius: 12px;
     }
 
     .paymentMethod {
-        background-color: var(--secondary-color);
+        background-color: white;
     }
 
     .orderSummary {
-        background-color: var(--white);
+        background-color: white;
         padding: 25px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
+        border-radius: 12px;
     }
 
     .checkoutFooter {
@@ -477,7 +477,7 @@ body {
 /* Media Query para pantallas grandes y escritorio */
 @media screen and (min-width: 1024px) {
     body {
-        background-color: var(--light-gray);
+        background-color: lightgray;
     }
 
     .checkoutHeader {
@@ -496,10 +496,9 @@ body {
 
     .cartProductsSection {
         flex: 2;
-        background-color: var(--white);
+        background-color: white;
         padding: 25px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
+        border-radius: 12px;
     }
 
     .checkoutSidebar {
@@ -536,13 +535,13 @@ body {
     }
 
     .navigationMenu li a {
-        color: var(--dark-gray);
+        color: darkgray;
         font-size: 16px;
         padding: 5px 10px;
     }
 
     .navigationMenu li a:hover {
-        color: var(--primary-color);
+        color: var(--main-dark);
         background-color: transparent;
     }
 
