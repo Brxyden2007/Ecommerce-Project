@@ -1,0 +1,3 @@
+## Ecommerce - Tienda de Ropa en linea.
+
+Plataforma especializada en todo tipo de moda, con un diseño responsivo y con experiencia de usuario optimizada, ideal para aquellos aficionados a la moda que buscan algo que comprar o se fijan en el rating, los objetivos son hacerlo lo mas dinamica posible, hacer todo lo necesario para que la app sea util y eficiente. Contiene 3 caracteristicas que serian el menu principal, detalles del producto y carrito del producto con su respectiva compra, se requiere hacer lo posible para hacer que esto sea eficiente y funcione.
