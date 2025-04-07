@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Pago y Demás</title>
+    <link rel="icon" type="image/png" href="img/iconPage.webp">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <nav class="checkoutNav">
+        <div class="checkoutNavContainer">
+            <ul class="navigationMenu">
+                <li><a href="/index.html">Home - Inicio</a></li>
+                <li><a href="/views/checkout.html">Products - Productos</a></li>
+                <li><a href="/views/checkout.html">Categories - Categorias</a></li>
+                <li><a href="/views/checkout.html">Cart - Carrito de Compras</a></li>
+                <li><a href="/views/checkout.html">Favorites - Favoritos</a></li>
+                <li><a href="/views/checkout.html">About Us - Acerca de Nosotros</a></li>
+                <li><a href="/index.html">Account - Cuenta de Usuario</a></li>
+                <li><a href="/views/checkout.html">Cerrar Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="checkoutHeader">
+        <a href="detail.html"><button class="backButton"></button></a>
+        <h1 class="checkoutTitle">Checkout</h1>
+        <button class="navButton" id="navButton"></button>
+    </header>
+
+    <main class="mainContent">
+        <section class="cartProductsSection">
+            <div class="cartProduct">
+                <div class="productImage"></div>
+                <div class="productDetails">
+                    <h2>Modern light clothes</h2>
+                    <h5>Dress modern</h5>
+                    <p class="productPrice">$212.99</p>
+                </div>
+                <div class="quantityControls">
+                    <button class="productSettings"></button>
+                    <button class="-"></button>
+                    <p class="quantity">4</p>
+                    <button class="+"></button>
+                </div>
+            </div>
+
+            <div class="cartProduct">
+                <div class="productImage"></div>
+                <div class="productDetails">
+                    <h2>Modern light clothes</h2>
+                    <h5>Dress modern</h5>
+                    <p class="productPrice">$162.99</p>
+                </div>
+                <div class="quantityControls">
+                    <button class="productSettings"></button>
+                    <button class="-"></button>
+                    <p class="quantity">1</p>
+                    <button class="+"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="paymentSection">
+            <h2 class="paymentTitle">Shipping Information</h2>
+            <div class="paymentMethod">
+                <div class="visaIcon"></div>
+                <p>**** **** **** 2143</p>
+                <div class="arrowIcon"></div>
+            </div>
+        </section>
+
+        <section class="orderSummary">
+            <div class="summaryRow">
+                <span class="summaryLabel">Total (<span class="totalItems">9 items</span>)</span>
+                <span class="summaryPrice">$1,014.95</span>
+            </div>
+         
+            <div class="summaryRow">
+                <span class="summaryLabel">Shipping Fee</span>
+                <span class="summaryValue">$0.00</span>
+            </div>
+        
+            <div class="summaryRow">
+                <span class="summaryLabel">Discount</span>
+                <span class="summaryValue">$0.00</span>
+            </div>
+            <hr> 
+            <div class="summaryRow subtotalRow">
+                <span class="summaryLabel">Sub Total</span>
+                <span class="summaryPrice">$1,014.95</span>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="checkoutFooter">
+        <button class="paymentButton">Pay</button>
+    </footer>
+    <script src="/js/components/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

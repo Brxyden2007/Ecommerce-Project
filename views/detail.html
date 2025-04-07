@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Detalles del Producto</title>
+    <link rel="icon" type="image/png" href="/storage/img/iconPage.webp">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <div>
+        <div>
+            <header class="detailHeader">
+                <div class="productImage"></div>
+                <a href="../index.html" class="backButton"></a>
+                <div style="position: relative;">
+                    <div id="saveIcon" class="iconContainer"></div>
+                </div>
+                <div id="messageSave" class="confirmationMessage"></div>
+            </header>
+            <main id="detailMainContent">
+                <div class="productInfo">
+                    <h1 class="productTitle">Light Dress Bless</h1>
+                    <p class="productRating">5.0 (7.932 reviews)</p>
+                    <p class="viewCount">Vistas por 100 personas</p>
+                </div>
+
+                <div class="quantitySelector">
+                    <button class="-"></button>
+                    <p class="quantity">1</p>
+                    <button class="+"></button>
+                </div>
+
+                <div class="productDescription">
+                    <p>Its simple and elegant shape makes it perfect for
+                        those of you who like you who want minimslist
+                        clothes
+                    </p>
+                    <button id="open_dialog" class="readMoreButton">Read More...</button>
+                    <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+                        <img src="/storage/img/ImgProduct2.png" alt="Picture Read More Img Description" />
+                        <h2 id="dialog_title" class="dialogTitle">Wanna know more about this cloth?</h2>
+                        <p id="dialog_description">
+                          This cloth is the Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil eum reiciendis atque delectus molestiae perspiciatis. Ipsam rerum architecto eum, praesentium sint minima cum quo quis illo aspernatur quae et?
+                        </p>
+                        <div class="flexContainer flexSpaceBetween">
+                          <button id="closeDialog">Close</button>
+                          <button id="confirm_dialog" class="confirmButton">Confirm</button>
+                        </div>
+                      </dialog>
+                </div>
+
+                <div class="optionsContainer">
+                    <div class="sizeSelector">
+                        <h3>Choose Size</h3>
+                        <div class="sizeOptions">
+                            <button class="sizeButton">S</button>
+                            <button class="sizeButton">M</button>
+                            <button class="sizeButton">L</button>
+                            <button class="sizeButton">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="colorSelector">
+                        <h3>Color</h3>
+                        <div class="colorOptions">
+                            <button class="colorButton"></button>
+                            <button class="colorButton"></button>
+                            <button class="colorButton"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="checkout.html">
+                    <footer class="detailFooter">
+                        <img src="/storage/img/CarritoIcon.png" alt="carIcon">
+                        <p>Add to Cart | $162.99 <h5>$190.99</h5></p>
+                    </footer>
+                </a>
+            </main>
+        </div>
+    </div>
+    
+    <img src="/storage/img/BarIphone.svg" alt="bariPhone" class="mobileBar">
+    <script src="/js/components/detail.js"></script>
+    <script src="/js/components/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="storage/img/iconPage.webp">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- iPhone Mockup Image -->
+    <img src="storage/img/iphone-home.svg" alt="iPhone Sup Tools" class="statusBar">
+
+    <!-- Main Content Wrapper -->
+    <div class="mainContent">
+        <!-- Header Section -->
+        <header class="headerMain">
+            <!-- User Greeting -->
+            <div class="welcomeText">Hello, Welcome👋</div>
+            <div class="userName"></div>
+            <img src="storage/img/profile.png" alt="profile-pic" class="profileImage">
+
+            <!-- Search Bar -->
+            <div class="searchContainer">
+                <div class="searchRow">
+                    <input type="text" class="searchInput" placeholder="Search clothes" autocomplete="off">
+                </div>
+                <div class="searchResults"></div>
+                <button class="settingsButton"></button>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav class="navigationBar">
+                <div class="categoryContainer">
+                    <ul class="categoryList">
+                        <li class="categoryItem">All items</li>
+                        <li class="categoryItem">Dress</li>
+                        <li class="categoryItem">T-Shirt</li>
+                        <li class="categoryItem">Pants</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Grid para los productos-->
+        <div class="productGrid">
+            <!-- Info Producto 1 -->
+            <div class="productCard">
+                <a href="views/detail.html">
+                    <img src="storage/img/ImgProduct1.png" alt="ImgProduct" class="productImage">
+                </a>
+                <h2 class="productTitle">Modern Light Clothes</h2>
+                <p class="productCategory">T-Shirt</p>
+                <p class="productPrice">$212.99</p>
+            </div>
+
+            <!-- Info Producto 2-->
+            <div class="productCard">
+                <a href="views/detail.html">
+                    <img src="storage/img/ImgProduct2.png" alt="ImgProduct2" class="productImage">
+                </a>
+                <h2 class="productTitle">Light Dress Bless</h2>
+                <p class="productCategory">Dress modern</p>
+                <p class="productPrice">$162.99</p>
+            </div>
+
+            <!-- Info Producto 3 -->
+            <div class="productCard">
+                <a href="views/detail.html">
+                    <img src="storage/img/ImgProduct3.png" alt="ImgProduct3" class="productImage">
+                </a>
+                <h2 class="productTitle">Fashion Clothes Black Dark</h2>
+                <p class="productCategory">Modern Clothes</p>
+                <p class="productPrice">$299.99</p>
+            </div>
+
+            <!-- Info Producto 4 -->
+            <div class="productCard">
+                <a href="views/detail.html">
+                    <img src="storage/img/ImgProduct4.png" alt="ImgProduct4" class="productImage">
+                </a>
+                <h2 class="productTitle">Light Dress Pure Yellow</h2>
+                <p class="productCategory">Dress Fashion</p>
+                <p class="productPrice">$149.99</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footerNav">
+        <div class="mobileNavMenu">
+            <ul class="mobileMenuList">
+                <li class="mobileMenuItem">Inicio</li>
+                <li class="mobileMenuItem">Carrito de Compras</li>
+                <li class="mobileMenuItem">Lista de Favoritos</li>
+                <li class="mobileMenuItem">Perfil</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bottom iPhone Mockup -->
+    <img src="storage/img/BarIphone.svg" alt="barra iPhone" class="deviceFooter">
+
+    <!-- JavaScript -->
+    <script src="js/components/main.js"></script>
+</body>
+</html>
