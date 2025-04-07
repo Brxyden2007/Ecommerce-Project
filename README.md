@@ -15,3 +15,7 @@ Su objetivo es replicar una pagina web de compras, que trate de ser lo mas dinam
 - **Reseñas y Calificaciones**: Muestra las opiniones de los clientes sobre los productos.
 - **Diseño Responsivo**: La app se adapta a diferentes dispositivos y tamaños de pantalla.
 - **Experiencia de Usuario Optimizada**: La app es fácil de usar y navegar.
+
+## Donde ver el proyecto?
+
+- **Page**: En vista de que el GitHub Pages no funcione adecuadamente, he aquí el Netlify: https://pagewebecommerce.netlify.app/
